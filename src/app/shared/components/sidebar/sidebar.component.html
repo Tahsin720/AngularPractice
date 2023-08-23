@@ -1,0 +1,34 @@
+<mat-nav-list>
+    <div class="profile-card">
+      <div class="header">
+        <h2 *ngIf="name !== ''">{{name}}</h2>
+        <h2 *ngIf="name === ''">Brinto</h2>
+        <h4>example@email.com</h4>
+      </div>
+      <!-- <img src="https://th.bing.com/th/id/R.7714caba13d5ab2e9212ed28574ef586?rik=JYKouPF4wXfD2Q&pid=ImgRaw&r=0" alt=""> -->
+    </div>
+  
+    <mat-divider></mat-divider>
+  
+    <h2 id="pages" matSubheader>Pages</h2>
+  
+    <div class="list">
+      <a mat-link-item routerLinkActive="list-item-active" routerLink="dashboard/dashboard">Dashboard</a>
+      <a mat-link-item routerLinkActive="list-item-active" routerLink="/posts">Posts</a>
+      <a mat-link-item routerLinkActive="list-item-active" routerLink="/articles">Articles</a>
+    </div>
+  
+    <mat-divider></mat-divider>
+  
+    <h2 id="pages" matSubheader>Tools</h2>
+    <div class="list">
+      <a mat-link-item routerLinkActive="list-item-active" routerLink="/contacts">
+        <mat-icon>import_contacts</mat-icon>
+        Contacts
+      </a>
+      <a mat-link-item routerLinkActive="list-item-active" routerLink="/leads">
+        <mat-icon>contact_phone</mat-icon>
+        Leads
+      </a>
+    </div>
+  </mat-nav-list>
